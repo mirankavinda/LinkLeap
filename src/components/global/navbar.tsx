@@ -14,15 +14,15 @@ const Navbar = async (props: Props) => {
             {/* <p className="text-3xl font-bold">Link Leap</p> */}
             <Image 
                 src="/link-leap-logo.png"
-                width={140}
-                height={50}
+                width={100}
+                height={112}
                 alt="link leap logo"
-                className="shadow-sa"
+                className="shadow-sa cursor-pointer"
             />
         </aside>
         <nav className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]
         hidden md:block">
-            <ul className="flex items-center gap-6 list-none">
+            <ul className="flex items-center gap-6 list-none text-sm">
             <li>
                 <Link href="#">Products</Link>
             </li>
