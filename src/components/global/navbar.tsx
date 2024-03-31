@@ -7,22 +7,22 @@ import React from 'react'
 type Props = {}
 
 const Navbar = async (props: Props) => {
-    return <header className="file:fixed right-0 left-0 top-0 py-4 px-4 bg-black/40 
+    return <header className="file:fixed right-0 left-0 top-0 py-4 px-8 bg-black/40 
     backdrop-blur-lg z-[100] flex items-center border-b-[1px] border-neutral-900
     justify-between">
         <aside className="flex items-center gap-[2px]">
-            {/* <p className="text-3xl font-bold">Link Leap</p> */}
-            <Image 
+            {<p className="text-xl font-bold">linkLeap/</p>}
+            {/* <Image 
                 src="/link-leap-logo.png"
                 width={100}
                 height={112}
                 alt="link leap logo"
                 className="shadow-sa cursor-pointer"
-            />
+            /> */}
         </aside>
         <nav className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]
         hidden md:block">
-            <ul className="flex items-center gap-6 list-none text-sm">
+            <ul className="flex items-center gap-6 list-none text-md font-bold text-[#fafafa]/60">
             <li>
                 <Link href="#">Products</Link>
             </li>
@@ -36,7 +36,7 @@ const Navbar = async (props: Props) => {
                 <Link href="#">Resources</Link>
             </li>
             <li>
-                <Link href="#">Documentation</Link>
+                <Link href="#">Docs</Link>
             </li>
             <li>
                 <Link href="#">Enterprise</Link>
