@@ -1,7 +1,7 @@
-import Navbar from "@/components/global/navbar";
-import { ContainerScroll } from "@/components/global/container-scroll-animation";
+import Navbar from "@/components/global/navbar"
+import { ContainerScroll } from "@/components/global/container-scroll-animation"
 import { Button } from '@/components/ui/button'
-import { InfiniteMovingCards } from '@/components/global/container-scroll-animation'
+import { InfiniteMovingCards } from '@/components/global/infinite-moving-cards'
 import { clients, products } from '@/lib/constant'
 import Image from "next/image";
 
