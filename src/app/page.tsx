@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { InfiniteMovingCards } from '@/components/global/infinite-moving-cards'
 import { clients, products } from '@/lib/constant'
 import Image from "next/image";
+import { LampComponent } from "@/components/global/lamp"
 
 export default function Home() {
   return(
@@ -47,7 +48,9 @@ export default function Home() {
         <HeroParallax products={products}></HeroParallax>
       </section>
       <section className="mt-[-500px]">
-        <la
+        <LampComponent />
+        <div className="flex flez-wrap item-center justify-center 
+        flex-col md:flex-row gap-8 -mt-72"></div>
       </section>
     </main>
   )
