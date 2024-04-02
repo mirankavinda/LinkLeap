@@ -46,6 +46,9 @@ export default function Home() {
       <section>
         <HeroParallax products={products}></HeroParallax>
       </section>
+      <section className="mt-[-500px]">
+        <la
+      </section>
     </main>
   )
 }
