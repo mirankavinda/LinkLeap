@@ -12,13 +12,13 @@ const Navbar = async (props: Props) => {
     justify-between">
         <aside className="flex items-center gap-[2px]">
             {<p className="text-xl font-bold cursor-pointer">linkLeap/</p>}
-            {/* <Image 
+            {/* { <Image 
                 src="/link-leap-logo.png"
-                width={100}
-                height={112}
+                width={120}
+                height={100}
                 alt="link leap logo"
                 className="shadow-sa cursor-pointer"
-            /> */}
+            /> } */}
         </aside>
         <nav className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%]
         hidden md:block">
