@@ -18,23 +18,26 @@ const MenuOptions = (props: Props) => {
 
     return (
         <nav className=" dark:bg-black h-screen overflow-scroll  justify-between 
-    flex items-center flex-col  gap-10 py-6 px-2">
+    flex items-center flex-col  gap-10 py- px-2">
         <div className="flex items-center justify-center flex-col gap-8">
             <Link
                 className="flex font-bold flex-row "
                 href="/"
             >
-                linkLeap.
+                linkLeap
             </Link>
             <TooltipProvider>
                 {menuOptions.map((menuItem) => (
                     <ul key={menuItem.name}>
-                        <Tooltip delayDuration={0}></Tooltip>
+                        <Tooltip delayDuration={0}>
+                            TooltipTrigger
+                        </Tooltip>
                     </ul>
                 ))}
             </TooltipProvider>
         </div>
-    </nav>)
+        </nav>
+    )
 }
 
 export default MenuOptions

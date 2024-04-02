@@ -32,6 +32,7 @@ export const SparklesCore = (props: ParticlesProps) => {
     particleDensity,
   } = props
   const [init, setInit] = useState(false)
+
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine)
@@ -43,15 +44,15 @@ export const SparklesCore = (props: ParticlesProps) => {
 
   const particlesLoaded = async (container?: Container) => {
     if (container) {
-      console.log(container)
+      console.log(container);
       controls.start({
         opacity: 1,
         transition: {
           duration: 1,
         },
-      })
+      });
     }
-  }
+  };
 
   return (
     <motion.div
