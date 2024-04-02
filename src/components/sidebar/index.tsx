@@ -16,22 +16,25 @@ type Props = {}
 const MenuOptions = (props: Props) => {
     const pathName = usePathname()
 
-    return <nav className=" dark:bg-black h-screen overflow-scroll justify-between
-    flex items-center flex-col gap-10 py-6 px-2">
+    return (
+        <nav className=" dark:bg-black h-screen overflow-scroll  justify-between 
+    flex items-center flex-col  gap-10 py-6 px-2">
         <div className="flex items-center justify-center flex-col gap-8">
             <Link
-                className="flex font-bold flex-row"
+                className="flex font-bold flex-row "
                 href="/"
             >
                 linkLeap.
             </Link>
             <TooltipProvider>
-                {menuOptions.map(() => {
-                    <div></div>
-                })}
+                {menuOptions.map((menuItem) => (
+                    <ul key={menuItem.name}>
+                        <Tooltip delayDuration={0}></Tooltip>
+                    </ul>
+                ))}
             </TooltipProvider>
         </div>
-    </nav>
+    </nav>)
 }
 
 export default MenuOptions
