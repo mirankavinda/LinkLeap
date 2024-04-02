@@ -1,5 +1,6 @@
 import Navbar from "@/components/global/navbar"
 import { ContainerScroll } from "@/components/global/container-scroll-animation"
+import { HeroParallax } from '@/components/global/connect-parallax'
 import { Button } from '@/components/ui/button'
 import { InfiniteMovingCards } from '@/components/global/infinite-moving-cards'
 import { clients, products } from '@/lib/constant'
@@ -27,7 +28,8 @@ export default function Home() {
                     Start For Free Today
                   </span>
                 </Button>
-                <h1 className="text-5xl md:text-8xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
+                <h1 className="text-5xl md:text-8xl  bg-clip-text text-transparent bg-gradient-to-b
+                 from-white to-neutral-600 font-sans font-bold">
                   Automate Your Work With LinkLeap
                 </h1>
               </div>
@@ -36,11 +38,14 @@ export default function Home() {
         </div>
       </section>
       <InfiniteMovingCards
-        className="md:mt-[18rem] mt-[-1--px]"
+        className="md:mt-[40rem] mt-[-100px]"
         items={clients}
         direction="right"
         speed="slow"
       />
+      <section>
+        <HeroParallax products={products}></HeroParallax>
+      </section>
     </main>
   )
 }

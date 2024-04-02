@@ -11,7 +11,7 @@ const Navbar = async (props: Props) => {
     backdrop-blur-lg z-[100] flex items-center border-b-[1px] border-neutral-900
     justify-between">
         <aside className="flex items-center gap-[2px]">
-            {<p className="text-xl font-bold">linkLeap/</p>}
+            {<p className="text-xl font-bold cursor-pointer">linkLeap/</p>}
             {/* <Image 
                 src="/link-leap-logo.png"
                 width={100}
