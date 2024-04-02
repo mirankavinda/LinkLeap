@@ -49,7 +49,7 @@ export default function Home() {
       <section>
         <HeroParallax products={products}></HeroParallax>
       </section>
-      <section className="mt-[-500px]">
+      <section className="mt-[100px]">
         <LampComponent />
         <div className="flex flez-wrap item-center justify-center 
         flex-col md:flex-row gap-8 -mt-72">
