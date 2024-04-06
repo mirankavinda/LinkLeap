@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/tooltip"
 import { menuOptions } from '@/lib/constant'
 import clsx from 'clsx'
+import { Separator } from '@/components/ui/separator'
 
 
 type Props = {}
@@ -56,7 +57,8 @@ const MenuOptions = (props: Props) => {
                         </Tooltip>
                     </ul>
                 ))}
-            </TooltipProvider>
+                </TooltipProvider>
+                <Separator />
         </div>
         </nav>
     )
