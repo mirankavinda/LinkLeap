@@ -11,7 +11,7 @@ import {
 import { menuOptions } from '@/lib/constant'
 import clsx from 'clsx'
 import { Separator } from '@/components/ui/separator'
-import { GitBranch, LucideMousePointerClick } from 'lucide-react'
+import { Database, GitBranch, LucideMousePointerClick } from 'lucide-react'
 
 
 type Props = {}
@@ -69,6 +69,28 @@ const MenuOptions = (props: Props) => {
                         <LucideMousePointerClick
                             className="dark:text-white"
                             size={18}
+                        />
+                        <div className="border-l-2 border-muted-foreground/50 
+                        h-6 absolute left-1/2 transform translate-x-
+                        [-50%] -bottom-[30px]"/>
+                    </div>
+                    <div className="relative dark:bg-[#353346]/70 p-2
+                    rounded-full dark:border-t-[2px] border-[1px]
+                    dark:border-t-[#353346]">
+                        <GitBranch
+                            className="text-muted-foreground"
+                        size={18}    
+                        />
+                        <div className="border-l-2 border-muted-foreground/50 
+                        h-6 absolute left-1/2 transform translate-x-
+                        [-50%] -bottom-[30px]"/>
+                    </div>
+                    <div className="relative dark:bg-[#353346]/70 p-2
+                    rounded-full dark:border-t-[2px] border-[1px]
+                    dark:border-t-[hsl(246,16%,24%)]">
+                        <Database
+                            className="text-muted-foreground"
+                        size={18}    
                         />
                         <div className="border-l-2 border-muted-foreground/50 
                         h-6 absolute left-1/2 transform translate-x-
