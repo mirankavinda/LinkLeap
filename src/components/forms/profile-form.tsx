@@ -14,8 +14,8 @@ function ProfileForm(props: Props) {
         mode: 'onChange',
         resolver: zodResolver(EditUserProfileSchema),
         defaultValues: {
-            name: user.name,
-            email: user.email,
+            name: '',
+            email: '',
         },
     })
     return <div>ProfileForn</div>
