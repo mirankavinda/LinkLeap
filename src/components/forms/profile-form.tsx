@@ -35,6 +35,11 @@ function ProfileForm(props: Props) {
                 disabled={isLoading}
                 control={form.control}
                 name="name"
+                render={({ field }) => (
+                    <FormItem>
+                        <FormLabel className="text-lg">User full name</FormLabel>
+                    </FormItem>
+                )}
             />
         </form>
     </Form>
