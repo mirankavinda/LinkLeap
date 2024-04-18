@@ -12,6 +12,7 @@ import {
     FormLabel,
     FormMessage,
   } from '../ui/form'
+import { Input } from '../ui/input'
 
 type Props = {}
 
@@ -38,6 +39,13 @@ function ProfileForm(props: Props) {
                 render={({ field }) => (
                     <FormItem>
                         <FormLabel className="text-lg">User full name</FormLabel>
+                        <FormControl>
+                            <Input
+                                placeholder="Name"
+                                {...field}
+                            />
+                        </FormControl>
+                        <FormMessage />
                     </FormItem>
                 )}
             />
