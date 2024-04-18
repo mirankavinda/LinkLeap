@@ -1,8 +1,9 @@
 'use client'
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { zodResover } from '@hookform/resolvers/zod'
+
 
 type Props = {}
 
@@ -11,7 +12,7 @@ function ProfileForm(props: Props) {
 
     const form = useForm<z.infer<typeof EditUserProfileSchema>>({
         mode: 'onChange',
-        resolver: zodResover(EditUserProfileSchema),
+        resolver: zodResolver(EditUserProfileSchema),
         defaultValues: {
             name: user.name,
             email: user.email,
