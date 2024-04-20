@@ -50,7 +50,7 @@ function ProfileForm(props: Props) {
                 )}
             />
             <FormField
-                disabled={isLoading}
+                disabled={true}
                 control={form.control}
                 name="email"
                 render={({ field }) => (
@@ -60,7 +60,6 @@ function ProfileForm(props: Props) {
                             <Input
                                 placeholder="Email"
                                 type="email"
-                                disabled
                                 {...field}
                             />
                         </FormControl>
