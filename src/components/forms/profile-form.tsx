@@ -49,6 +49,23 @@ function ProfileForm(props: Props) {
                     </FormItem>
                 )}
             />
+            <FormField
+                disabled={isLoading}
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                    <FormItem>
+                        <FormLabel className="text-lg">Email</FormLabel>
+                        <FormControl>
+                            <Input
+                                placeholder="Email"
+                                {...field}
+                            />
+                        </FormControl>
+                        <FormMessage />
+                    </FormItem>
+                )}
+            />
         </form>
     </Form>
 }
