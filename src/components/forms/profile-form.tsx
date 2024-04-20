@@ -52,13 +52,15 @@ function ProfileForm(props: Props) {
             <FormField
                 disabled={isLoading}
                 control={form.control}
-                name="name"
+                name="email"
                 render={({ field }) => (
                     <FormItem>
                         <FormLabel className="text-lg">Email</FormLabel>
                         <FormControl>
                             <Input
                                 placeholder="Email"
+                                type="email"
+                                disabled
                                 {...field}
                             />
                         </FormControl>
