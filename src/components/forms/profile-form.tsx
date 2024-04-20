@@ -13,6 +13,7 @@ import {
     FormMessage,
   } from '../ui/form'
 import { Input } from '../ui/input'
+import { Button } from '../ui/button'
 
 type Props = {}
 
@@ -67,6 +68,18 @@ function ProfileForm(props: Props) {
                     </FormItem>
                 )}
             />
+            <Button
+                type="submit"
+                className="self-start hover:bg-[#2F006B]
+                hover:text-white"
+            >
+                {isLoading ? (
+                    <Loader2 className="mr-2 h-4 animate-spin" />
+                ) : (
+                        'Save User Settings'
+                )}
+                
+            </Button>
         </form>
     </Form>
 }
