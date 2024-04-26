@@ -75,7 +75,10 @@ function ProfileForm(props: Props) {
                 hover:text-white"
             >
                 {isLoading ? (
-                    <Loader2 className="mr-2 h-4 animate-spin" />
+                    <>
+                        <Loader2 className="mr-2 h-4 animate-spin" />
+                        Saving
+                    </>
                 ) : (
                         'Save User Settings'
                 )}
